@@ -1,0 +1,60 @@
+.form-creater{
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: whitesmoke;
+    border: 1px solid turquoise;
+    z-index: 1;
+    border-radius: 10px;
+    
+}
+
+.form-creater-shell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-creater-shell div{
+    margin-top: 24px;
+}
+
+.form-creater-button{
+    margin-top: 24px;
+    background-color: #01a7fd;
+    color: white;
+    height: 50px;
+    width: 160px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .25);
+    
+}
+
+.form-creater-inputs{
+    display: flex;
+    flex-direction: column;
+}
+.form-creater-input input{
+    height: 30px;
+    outline: none;
+    background-color: black;
+    color: magenta;
+    border-radius: 10px;
+    
+
+}
+

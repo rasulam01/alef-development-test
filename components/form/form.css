@@ -1,0 +1,144 @@
+.form{
+    min-height: 80vh;
+}
+
+.form-shell-personal{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;    
+    min-height: 166px;
+    
+}
+
+
+.form-shell-personal-title span{
+    display: flex;
+    
+    float: left;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .5px;
+    margin-bottom: 16px;
+}
+
+
+.form-shell-personal-name div, .form-shell-personal-age div{
+    display: flex;
+    float: left;
+    padding: 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+.form-shell-personal-name input, .form-shell-personal-age input{
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 1.5%;
+    width: 50%;
+    border: transparent;
+    border-bottom: .5px solid rgba(0, 0, 0, .1);
+    outline: none;
+
+}
+.form-shell-personal-name, .form-shell-personal-age{
+    position: relative;
+    height: 56px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+
+.form-shell-children{
+    display: flex;    
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;    
+    min-height: 166px;
+}
+
+.form-shell-children-title{
+    display: flex;
+    justify-content: space-between;        
+}
+
+.form-shell-children-title span{
+    
+    font-style: normal;
+    float: left;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .5px;
+    margin-bottom: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    
+}
+
+.form-shell-children-save{
+    width: 118px;
+    height: 44px;
+    background: #01a7fd;
+    color: white;
+    border-radius: 100px;
+    font-size: 14px;
+    border: none;
+}
+
+.form-shell-children-save:hover, .form-shell-children-add:hover, .child-block-delete:hover{
+    cursor: pointer;
+}
+
+.form-shell-children-add{
+    width: 204px;
+    height: 44px;
+    border: 3px solid #01a7fd;
+    letter-spacing: .25px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: white;
+    color: #01a7fd;
+    
+}
+
+.child-block{    
+    display: flex;    
+    align-items: center;
+    
+}
+
+.child-block-name, .child-block-age{
+    display: flex;
+    flex-direction: column;    
+    height: 56px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    width: 43%;            
+}
+.child-block-name + .child-block-age{
+    margin-left: 20px;
+}
+
+.child-block-name div, .child-block-age div{
+    display: flex;    
+    padding: 5px 5px;
+    margin-left: 10px;
+    color: gray;
+    font-size: 14px;
+}
+.child-block-name span, .child-block-age span{    
+    font-size: 14px;
+}
+.child-block-delete{
+    margin-left: 12px;
+    color: #01a7fd;
+}
+
+
+
