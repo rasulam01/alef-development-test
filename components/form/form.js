@@ -26,7 +26,7 @@ export const Form = ({ data, setData, setPersonal }) => {
       temp.splice(pos, 1)
       setData(temp)
       let items = JSON.parse(localStorage.getItem("data"));
-      items = items.filter((item) => item.pos !== pos);
+      items.splice(pos, 1)
       console.log(items);
       localStorage.setItem("data", JSON.stringify(items));
       if (items.length === 0) {

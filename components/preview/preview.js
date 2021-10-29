@@ -5,6 +5,7 @@ export const Preview = ({ personal, data }) => {
   useEffect(() => {
     console.log(personal);
   });
+  localStorage.removeItem('personal')
   return (
     <>
       <div className="preview">
@@ -12,7 +13,7 @@ export const Preview = ({ personal, data }) => {
           <div className="preview-personal">
             <div className="preivew-personal-title">Персональные данные</div>
             <div className="preview-personal-info">
-              {personal ? personal[0].name + ", " + personal[0].age + " лет " : null}
+              {personal.length > 0 ? personal[0].name + ", " + personal[0].age + " лет " : null}
             </div>
           </div>
           <div className="preview-children">
